@@ -1,6 +1,6 @@
 // wykonane przez Juliusza Tłuścik z 3gt nr. w dzienniku 26
 let slider = document.querySelector(".slider");
-let imgs = ["/imgs/bee.jpg", "/imgs/dog.jpg", "/imgs/bitch.jpg", "/imgs/lion.jpg"];
+let imgs = ["imgs/bee.jpg", "imgs/dog.jpg", "imgs/bitch.jpg", "imgs/lion.jpg"];
 let left = slider.querySelector(".left");
 let right = slider.querySelector(".right");
 let counter = slider.querySelector("span");
