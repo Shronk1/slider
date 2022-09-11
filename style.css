@@ -1,0 +1,62 @@
+/* wykonane przez Juliusza Tłuścik z 3gt nr. w dzienniku 26 */
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.slider{
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #cccccc;
+}
+.slider>span{
+    align-self: flex-end;
+}
+.arrow{
+    aspect-ratio: 1/1;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 190, 42);
+    opacity: .6;
+    transition: opacity .7s;
+}
+.arrow:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.arrow.right>svg{
+    transform: rotate(90deg);
+}
+.arrow.left>svg{
+    transform: rotate(-90deg);
+}
+.arrow.deactive{
+    filter: grayscale(100%);
+    cursor: not-allowed;
+}
+footer{
+    z-index: 1;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
